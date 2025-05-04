@@ -1,0 +1,271 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:37:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:37:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:37:07] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:37:07] "[33mGET /static/image/music.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:37:07] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:37:07] "[33mGET /static/image/music.jpg HTTP/1.1[0m" 404 -
+ERROR:root:Prediction error: Invalid loudness: loudness must be between -60 and 0
+Traceback (most recent call last):
+  File "C:\Users\sidha\project\app.py", line 34, in validate_input
+    raise ValueError(f"{name} must be between {min_val} and {max_val}")
+ValueError: loudness must be between -60 and 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sidha\project\app.py", line 51, in predict
+    loudness = validate_input(request.form['loudness'], -60, 0, 'loudness')
+  File "C:\Users\sidha\project\app.py", line 37, in validate_input
+    raise ValueError(f"Invalid {name}: {str(e)}")
+ValueError: Invalid loudness: loudness must be between -60 and 0
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:38:22] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:38:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:38:22] "[33mGET /static/image/music.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:38:22] "[33mGET /static/image/music.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:38:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:38:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:38:30] "[33mGET /static/image/music.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:39:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:39:39] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:39:39] "GET /static/img/music.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:39:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:39:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:39:40] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:43:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:43:44] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:43:44] "GET /static/img/music.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:43:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:43:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:43:46] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:57:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:57:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:57:17] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:57:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:57:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 12:57:18] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:02:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:02:53] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:02:54] "GET /static/img/music.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:02:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:02:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:02:54] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:22] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:22] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:23] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:05:32] "[36mGET /static/img/music.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:15:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:15:06] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:15:06] "GET /static/img/bcgd.webp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:15:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:15:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:15:07] "[36mGET /static/img/bcgd.webp HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:20:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:20:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:20:59] "[36mGET /static/img/bcgd.webp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:21:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:21:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:21:00] "[36mGET /static/img/bcgd.webp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:25:21] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:25:21] "GET /static/css/res.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:25:21] "[33mGET /static/image/.bcgd.webp HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:30:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:30:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:30:27] "[36mGET /static/img/bcgd.webp HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:32:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:32:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:32:52] "[33mGET /static/img/bcgd.webp HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:34:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:34:01] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:34:01] "GET /static/img/image%202.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:34:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:34:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:34:02] "[36mGET /static/img/image%202.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:38:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:38:58] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:38:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:38:58] "GET /static/img/image%202.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:38:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:38:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:38:59] "[36mGET /static/img/image%202.jpg HTTP/1.1[0m" 304 -
+ERROR:root:Prediction error: Invalid loudness: loudness must be between -60 and 0
+Traceback (most recent call last):
+  File "C:\Users\sidha\project\app.py", line 34, in validate_input
+    raise ValueError(f"{name} must be between {min_val} and {max_val}")
+ValueError: loudness must be between -60 and 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sidha\project\app.py", line 51, in predict
+    loudness = validate_input(request.form['loudness'], -60, 0, 'loudness')
+  File "C:\Users\sidha\project\app.py", line 37, in validate_input
+    raise ValueError(f"Invalid {name}: {str(e)}")
+ValueError: Invalid loudness: loudness must be between -60 and 0
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:43:42] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:43:42] "GET /static/css/res.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:43:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:43:42] "[33mGET /static/image/image%202.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:43:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:43:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:43:52] "[36mGET /static/img/image%202.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:45:45] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:45:45] "GET /static/css/res.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:45:45] "[33mGET /static/image/image%202.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:50:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:50:58] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:50:58] "[36mGET /static/img/image%202.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:50:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:50:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:50:59] "[36mGET /static/img/image%202.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:51:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:51:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:51:02] "[36mGET /static/img/image%202.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:51:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:51:17] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:51:17] "GET /static/img/image%202.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:59:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:59:16] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:59:16] "GET /static/img/spoty.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:59:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:59:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 13:59:16] "[36mGET /static/img/spoty.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.5:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 138-076-279
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:55:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:55:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:55:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:55:21] "[36mGET /static/img/spoty.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:55:21] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:55:21] "[36mGET /static/img/spoty.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:57:38] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:57:38] "GET /static/css/res.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:57:38] "[32mGET /static//spoty.jpg HTTP/1.1[0m" 308 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:57:38] "[33mGET /static/spoty.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:58:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:58:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 14:58:31] "[36mGET /static/img/spoty.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:00:38] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:00:38] "[36mGET /static/css/res.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:00:38] "[33mGET /static/spoty.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:00:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:00:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:00:47] "[36mGET /static/img/spoty.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:52:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:52:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:52:13] "[36mGET /static/img/spoty.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:54:20] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:54:20] "[36mGET /static/css/res.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:54:20] "[33mGET /static/spoty.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:54:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:54:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:54:37] "[36mGET /static/img/spoty.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:56:25] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:56:25] "[36mGET /static/css/res.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Apr/2025 15:56:25] "[33mGET /static/spoty.jpg HTTP/1.1[0m" 404 -
